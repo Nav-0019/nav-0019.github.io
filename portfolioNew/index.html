@@ -6,12 +6,12 @@
     <title>Shubham | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[url('assets/backgroundIndex.jpg')] bg-cover bg-center min-h-screen">
+<body class="bg-[url('assets/backgroundIndex.jpg')] bg-cover bg-fixed bg-center min-h-screen">
     <!---Background Overlay-->
-    <div class="min-h-screen bg-black/85 backdrop-blur-sm">
+    <div class="min-h-screen backdrop-blur-[2px] bg-[#0B0F13]">
 
         <!-- Navbar -->
-        <nav class="sticky top-0 w-full z-50 bg-[#292E31]/60 backdrop-blur-md border-b border-white/10 shadow-lg">
+        <nav class="sticky top-0 w-full z-50 bg-[#292E31] backdrop-blur-md border-b border-white/10 shadow-lg">
             <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
 
                 <h1 class="text-2xl font-bold text-white flex items-center gap-2">
@@ -68,24 +68,25 @@
             </div>
         </nav>
 
-       <section name="heroSection" class="bg-[#292E31]/60 backdrop-blur-md py-16 px-6">
+        <!-- Hero Section -->
+       <section name="heroSection" class="w-full bg-[#1C1F21] py-16 px-6">
             <div class="max-w-[1200px] mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-8">
 
                 <!-- Text Content -->
                 <div class="flex-1 text-center lg:text-left flex flex-col justify-center gap-4">
                     <h2 class="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">Hi, it's Shubham</h2>
                     <h4 class="text-xl md:text-2xl text-teal-300 drop-shadow-md mt-2">Web Developer & Data Scientist</h4>
-                    <h6 class="text-lg md:text-xl text-[#BDBDBD]/70 drop-shadow-sm mt-2">Python • SQL • Data Analysis • Machine Learning</h6>
+                    <h6 class="text-xl md:text-xl text-[#BDBDBD]/70 drop-shadow-sm mt-2">Python • SQL • Data Analysis • Machine Learning</h6>
                     <p class="text-white/80 text-sm md:text-base drop-shadow-sm mt-4 text-justify leading-relaxed">
                         Crafting seamless web experiences and unraveling data mysteries with code. Welcome to my portfolio, where creativity meets technology. Explore my projects and let's build something amazing together!
                     </p>
                 
                     <div class="mt-6 flex justify-center lg:justify-start gap-4">
                         <a href="#projects" class="bg-teal-400 text-black px-6 py-2 rounded-lg text-sm font-medium hover:bg-teal-300 transition shadow-md backdrop-blur-sm hover:shadow-lg">
-                            View Projects
+                            View Projects <span class="text-[1rem] inline-block">»</span>
                         </a>
                         <a href="mailto:shubhamchauhan0019@gmail.com" class="bg-transparent border border-white/50 text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-white/20 transition shadow-md backdrop-blur-sm hover:shadow-lg">
-                            Hire Me
+                            Hire Me <span class="text-[1rem] inline-block">→</span>
                         </a>
                     </div>
                 </div>
@@ -95,6 +96,45 @@
                     <img src="assets/profilePic.jpeg" alt="Shubham's Profile Picture" class="w-full h-auto border-4 border-teal-400 shadow-lg drop-shadow-[0_0_5px_rgba(45,212,191,0.7)] rounded-full">
                 </div>
 
+            </div>
+        </section>
+
+        <!--Major Projects-->
+        <section name="Major_Projects" class="relative py-16 px-6">
+            <div class="max-w-[1200px] mx-auto">
+                <h2 class="bg-[#1E2122]/80 backdrop-blur-sm p-3 text-2xl md:text-3xl font-bold text-white drop-shadow-[0px_2px_1px_rgba(255,255,255,0.5)] mb-8 text-center">Major Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card 1 -->
+                    <div class="rounded-lg hover:drop-shadow-[0px_3px_2px_rgba(0,255,255,0.7)] hover:scale-[1.02] hover:z-10 relative transition-all duratioc-300" style="background: #00071c;
+background: linear-gradient(90deg, rgba(0, 7, 28, 1) 0%, rgba(0, 28, 28, 1) 100%);">
+                        <img src="assets/loanPredictionBanner.png" alt="Project 1" class="w-full h-48 object-cover text-white rounded-t-lg border-b border-white/20 bg-[#1E2122]/80 backdrop-blur-sm">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-white mb-2">Loan Risk Prediction</h3>
+                            <p class="text-white/80 text-sm mb-4">Predicts loan application risk using machine learning. The model analyzes applicant data to estimate the likelihood of default, aiding in safer lending decisions.</p>
+                            <a href="#" class="text-teal-400 hover:underline">View Details</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="rounded-lg hover:drop-shadow-[0px_3px_2px_rgba(0,255,255,0.7)] hover:scale-[1.02] hover:z-10 relative transition-all duration-300" style="background: #00071c;
+background: linear-gradient(90deg, rgba(0, 7, 28, 1) 0%, rgba(0, 28, 28, 1) 100%);">
+                        <img src="assets/project1.png" alt="Project 1" class="w-full h-48 object-cover text-white rounded-t-lg bg-[#1E2122]/80 backdrop-blur-sm border-b border-white/20">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-white mb-2">E-commerce Website</h3>
+                            <p class="text-white/80 text-sm mb-4">A responsive online store built with React and Node.js, featuring user authentication and a shopping cart.</p>
+                            <a href="#" class="text-teal-400 hover:underline">View Details</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="rounded-lg hover:drop-shadow-[0px_3px_2px_rgba(0,255,255,0.7)] hover:scale-[1.02] hover:z-10 relative transition-all duration-300" style="background: #00071c;
+background: linear-gradient(90deg, rgba(0, 7, 28, 1) 0%, rgba(0, 28, 28, 1) 100%);">
+                        <img src="assets/project3.png" alt="Project 3" class="w-full h-48 object-cover text-white rounded-t-lg bg-[#1E2122]/80 backdrop-blur-sm border-b border-white/20">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-white mb-2">Machine Learning Model</h3>
+                            <p class="text-white/80 text-sm mb-4">A predictive model developed using Python and scikit-learn, achieving 95% accuracy on a classification task.</p>
+                            <a href="#" class="text-teal-400 hover:underline">View Details</a>    
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
