@@ -4,18 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shubham | Portfolio</title>
-    <link rel="stylesheet" href="style.css"/>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./js/loadNavbar.js"></script>
 </head>
 <body class="bg-[url('assets/backgroundIndex.jpg')] bg-cover bg-center min-h-screen">
     <!---Background Overlay-->
-    <div class="min-h-screen bg-black/70 backdrop-blur-sm">
+    <div class="min-h-screen bg-black/85 backdrop-blur-sm">
 
         <!-- Navbar -->
-        <div id="navbar-placeholder"></div>
+        <nav class="fixed w-full z-50 bg-[#292E31]/60 backdrop-blur-md border-b border-white/10 shadow-lg">
+            <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+
+                <h1 class="text-2xl font-bold text-white flex items-center gap-2">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                        class="w-6 h-6 text-teal-400 drop-shadow-[0_0_6px_rgba(45,212,191,0.7)]"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+                    </svg>Shubham
+                </h1>
+
+                <ul class="hidden md:flex items-center gap-8 text-sm text-white">
+                    <li>
+                        <a href="#home" class="hover:text-teal-400 transition group items-center gap-2 flex duration-300"><!-- Icons8 SVG -->
+                            <svg class="w-5 h-5 transition duration-300" 
+                                fill="currentColor" 
+                                viewBox="0 0 24 24">
+                                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                            </svg>HOME
+                        </a>
+                    </li>
+                    <li><a href="#about" class="hover:text-teal-400 transition">ABOUT</a></li>
+                    <li><a href="#skills" class="hover:text-teal-400 transition">SKILLS</a></li>
+                    <li><a href="#projects" class="hover:text-teal-400 transition">PROJECTS</a></li>
+                    <li><a href="#contact" class="hover:text-teal-400 transition">CONTACT</a></li>
+                </ul>
+
+                <div class="flex items-center gap-4">
+                    <a href="#" class="hidden md:block bg-teal-400 text-black px-4 py-1.5 rounded-lg text-sm font-medium hover:bg-teal-300 transition">
+                        RESUME
+                    </a>
+
+                    <button id="menu-btn" class="md:hidden text-white text-2xl">
+                        <span class="block w-6 h-1 bg-white mb-1"></span>
+                        <span class="block w-6 h-1 bg-white mb-1"></span>
+                        <span class="block w-6 h-1 bg-white"></span>
+                    </button>
+
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="md:hidden overflow-hidden max-h-0 opacity-0 transition-all duration-500 ">
+                <ul class="flex flex-col items-center gap-6 py-6 text-sm text-white">
+                    <li><a href="#home" class="block w-48 max-w-[220px] mx-auto px-6 py-2 border border-white/20 rounded-lg shadow-md backdrop-blur-sm text-center hover:shadow-lg hover:text-teal-400 transition ">HOME</a></li>
+                    <li><a href="#about" class="block w-48 max-w-[220px] mx-auto px-6 py-2 border border-white/20 rounded-lg shadow-md backdrop-blur-sm text-center hover:shadow-lg hover:text-teal-400 transition">ABOUT</a></li>
+                    <li><a href="#skills" class="block w-48 max-w-[220px] mx-auto px-6 py-2 border border-white/20 rounded-lg shadow-md backdrop-blur-sm text-center hover:shadow-lg hover:text-teal-400 transition">SKILLS</a></li>
+                    <li><a href="#projects" class="block w-48 max-w-[220px] mx-auto px-6 py-2 border border-white/20 rounded-lg shadow-md backdrop-blur-sm text-center hover:shadow-lg hover:text-teal-400 transition">PROJECTS</a></li>
+                    <li><a href="#contact" class="block w-48 max-w-[220px] mx-auto px-6 py-2 border border-white/20 rounded-lg shadow-md backdrop-blur-sm text-center hover:shadow-lg hover:text-teal-400 transition">CONTACT</a></li>
+                    <li><a href="#" class="block w-48 max-w-[220px] mx-auto px-6 py-2 border border-teal-800 rounded-lg bg-teal-500 text-black text-center text-sm font-medium hover:bg-teal-400 transition shadow-md backdrop-blur-sm hover:shadow-lg">
+                        RESUME
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Hero Section-->
+        
 
     </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+                const btn = document.getElementById('menu-btn');
+                const menubtn = document.getElementById('mobile-menu');
+
+                btn.addEventListener('click', () => {
+                    if (menubtn.classList.contains("max-h-0")) {
+                        menubtn.classList.remove("max-h-0", "opacity-0");
+                        menubtn.classList.add("max-h-96", "opacity-100");
+                    } else {
+                        menubtn.classList.remove("max-h-96", "opacity-100");
+                        menubtn.classList.add("max-h-0", "opacity-0");
+                    }
+                });
+
+                 window.addEventListener("scroll", () => {
+                    const nav = document.querySelector("nav");
+                    if (window.scrollY > 50) {
+                    nav.classList.add("bg-black/80");
+                    } else {
+                    nav.classList.remove("bg-black/80");
+                    }
+                });
+        });
+    </script>
 </body>
 </html>
