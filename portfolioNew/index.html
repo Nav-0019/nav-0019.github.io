@@ -7,10 +7,9 @@
     <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-screen" style="background: #005250;
-background: linear-gradient(90deg,rgba(0, 82, 80, 1) 0%, rgba(7, 0, 110, 1) 54%, rgba(0, 94, 94, 1) 100%);">
+<body class="min-h-screen">
     <!---Background Overlay-->
-    <div class="min-h-screen backdrop-blur-[2px] bg-[#000000]/80 backdrop-saturate-150 backdrop-contrast-125 ">
+    <div class="min-h-screen backdrop-blur-[2px] bg-[#0B0F13] backdrop-saturate-150 backdrop-contrast-125">
 
         <!-- Navbar -->
         <nav class="sticky top-0 w-full z-50 bg-[#292E31] backdrop-blur-md border-b border-white/30 shadow-lg">
@@ -71,8 +70,8 @@ background: linear-gradient(90deg,rgba(0, 82, 80, 1) 0%, rgba(7, 0, 110, 1) 54%,
         </nav>
 
         <!-- Hero Section -->
-       <section name="heroSection" class="w-full bg-[#0B0F13] py-16 px-6">
-            <div class="max-w-[1200px] mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-8">
+       <section name="heroSection" class="w-full py-16 px-6 relative">
+            <div class="max-w-[1200px] mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-8 bg-[#fff]/2 p-6 rounded-lg shadow-lg backdrop-blur-sm border border-white/20">
 
                 <!-- Text Content -->
                 <div class="flex-1 text-center lg:text-left flex flex-col justify-center gap-4">
@@ -102,12 +101,12 @@ background: linear-gradient(90deg,rgba(0, 82, 80, 1) 0%, rgba(7, 0, 110, 1) 54%,
         </section>
 
         <!--Skills Section-->
-       <section name="Skills" class="relative py-16 px-6 bg-[#0B0F13]">
+       <section name="Skills" class="relative py-16 px-6 ">
             <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-8">
 
                 <!-- Technical Skills (Left) -->
                 <div class="flex-1 space-y-6">
-                <h2 class="text-3xl font-bold text-white text-center md:text-left mb-6 bg-gradient-to-r from-teal-400 to-blue-500 inline-block px-4 py-2 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold text-white text-center mb-6 bg-gradient-to-r from-teal-400 to-blue-500 inline-block px-4 py-2 rounded-lg shadow-lg w-full mx-auto md:mx-0">
                     Technical Skills
                 </h2>
 
@@ -175,7 +174,7 @@ background: linear-gradient(90deg,rgba(0, 82, 80, 1) 0%, rgba(7, 0, 110, 1) 54%,
             <div class="max-w-[1200px] mx-auto">
 
                 <!-- Section Title -->
-                <h2 class="bg-[#1C1F21] backdrop-blur-sm p-3 text-2xl md:text-3xl font-bold text-white drop-shadow-[0px_2px_1px_rgba(255,255,255,0.5)] mb-8 text-center">Major Projects</h2>
+                <h3 class="bg-gradient-to-r from-teal-400 to-blue-500 p-3 text-1xl md:text-2xl font-bold text-white drop-shadow-[0px_2px_1px_rgba(255,255,255,0.5)] mb-8 text-center">Major Projects</h3>
                 
                 <!-- Projects Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -235,9 +234,114 @@ background: linear-gradient(90deg, rgba(0, 7, 28, 1) 0%, rgba(0, 28, 28, 1) 100%
                 </div>
             </div>
         </section>
+
+        <!--Minor Projects-->
+        <section id="toggle_minor-projects" class="relative py-16 px-6 text-white">
+            <div class="max-w-[1200px] mx-auto py-6 px-6 bg-[#ffffff]/20 rounded-lg ">
+
+                <!-- Heading -->
+                <div class="mb-8 text-center w-full text-1xl md:text-2xl font-bold text-white text-size-3xl bg-gradient-to-r from-teal-400 to-blue-500 inline-block px-4 py-2 rounded-lg shadow-lg">
+                    <h2">
+                        Minor Projects
+                    </h2>
+                </div>
+
+                <!-- Grid -->
+                <div">
+
+                    <!-- Project Card --> 
+                   <div class="mb-6 p-4 rounded-lg hover:drop-shadow-[0px_3px_2px_rgba(0,255,255,0.7)] hover:scale-[1.02] hover:z-10 relative transition-all duration-300"
+                        style="background: linear-gradient(90deg, rgba(0, 7, 28, 1) 0%, rgba(0, 28, 28, 1) 100%);">
+
+                        <!-- Header -->
+                        <div onclick="toggleProject(this)" class="flex justify-between items-center cursor-pointer">
+                            <h3 class="text-xl font-semibold text-white mb-2">isekai-gaming-webapp</h3>
+
+                            <!-- Arrow -->
+                            <svg class="w-5 h-5 text-white transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+
+                        <!-- Hidden Content -->
+                        <div class="max-h-0 overflow-hidden transition-all duration-500">
+
+                            <p class="text-sm text-white/80 mt-2 p-4 rounded-lg bg-[#1E2122]/80 backdrop-blur-sm border border-white/20 text-justify">
+                                This project is an Isekai-themed RPG where players level up by matching monster attack numbers,
+                                progressing through ranks and weapons until defeating the final boss.
+                            </p>
+
+                            <div class="flex gap-4 px-4 pb-4 mt-4">
+                                <a href="https://Nav-0019.github.io/Isekai-Web-Game/" target="_blank"
+                                class="px-3 py-1 bg-white text-black rounded-md text-sm">
+                                    Play
+                                </a>
+                                <a href="https://github.com/Nav-0019/Isekai-Web-Game" target="_blank"
+                                class="px-3 py-1 border border-white text-white rounded-md text-sm">
+                                    GitHub
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Project Card --> 
+                   <div class="mb-6 p-4 rounded-lg hover:drop-shadow-[0px_3px_2px_rgba(0,255,255,0.7)] hover:scale-[1.02] hover:z-10 relative transition-all duration-300"
+                        style="background: linear-gradient(90deg, rgba(0, 7, 28, 1) 0%, rgba(0, 28, 28, 1) 100%);">
+
+                        <!-- Header -->
+                        <div onclick="toggleProject(this)" class="flex justify-between items-center cursor-pointer">
+                            <h3 class="text-xl font-semibold text-white mb-2">isekai-Bet-App (funny)</h3>
+
+                            <!-- Arrow -->
+                            <svg class="w-5 h-5 text-white transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+
+                        <!-- Hidden Content -->
+                        <div class="max-h-0 overflow-hidden transition-all duration-500">
+
+                            <p class="text-sm text-white/80 mt-2 p-4 rounded-lg bg-[#1E2122]/80 backdrop-blur-sm border border-white/20 text-justify">
+                                This project is an Isekai-themed RPG where players level up by matching monster attack numbers, progressing through ranks and weapons with funny sound effects, and includes a Kotlin APK version available for download.
+                            </p>
+
+                            <div class="flex gap-4 px-4 pb-4 mt-4">
+                                <a href="https://drive.google.com/file/d/1XeseX0PSqIW9amNz4uKI1Pit6Q21Cve3/view?usp=sharing" target="_blank"
+                                class="px-3 py-1 bg-white text-black rounded-md text-sm">
+                                    Download APK
+                                </a>
+                                <a href="https://github.com/Nav-0019/Isekai_Game_App/" target="_blank"
+                                class="px-3 py-1 border border-white text-white rounded-md text-sm">
+                                    GitHub
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-6 text-center bg-[#0B0F13] backdrop-blur-sm border-t border-white/30 shadow-lg">
+            <p class="text-sm text-white">&copy; 2024 Shubham Chauhan. All rights reserved.</p>
+        </footer>
+
+        <!--Floating WhatsApp Contact Button-->
+        <div class="fixed bottom-6 right-6 z-50 group">
+            <a href="https://wa.me/917310347742" target="_blank" class="relative flex items-center justify-center w-14 h-14 text-white rounded-full shadow-lg hover:bg-[#1DDB13]/30 transition duration-300 animate-bounce">
+                <!-- Icon -->
+                <img src="assets/whatsappIcon.jpg" alt="WhatsApp" class="w-12 h-12 relative z-10">
+            </a>
+        </div>
+
     </div>
 
     <script>
+
         document.addEventListener('DOMContentLoaded', () => {
 
                 const btn = document.getElementById('menu-btn');
@@ -262,6 +366,19 @@ background: linear-gradient(90deg, rgba(0, 7, 28, 1) 0%, rgba(0, 28, 28, 1) 100%
                     }
                 });
         });
+
+        function toggleProject(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector("svg");
+
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.classList.remove("rotate-180");
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.classList.add("rotate-180");
+            }
+        }
     </script>
 </body>
 </html>
