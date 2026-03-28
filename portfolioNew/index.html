@@ -6,12 +6,13 @@
     <title>Shubham | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[url('assets/backgroundIndex.jpg')] bg-cover bg-fixed bg-center min-h-screen">
+<body class="min-h-screen" style="background: #005250;
+background: linear-gradient(90deg,rgba(0, 82, 80, 1) 0%, rgba(7, 0, 110, 1) 54%, rgba(0, 94, 94, 1) 100%);">
     <!---Background Overlay-->
-    <div class="min-h-screen backdrop-blur-[2px] bg-[#0B0F13]">
+    <div class="min-h-screen backdrop-blur-[2px] bg-[#000000]/80 backdrop-saturate-150 backdrop-contrast-125 ">
 
         <!-- Navbar -->
-        <nav class="sticky top-0 w-full z-50 bg-[#292E31] backdrop-blur-md border-b border-white/10 shadow-lg">
+        <nav class="sticky top-0 w-full z-50 bg-[#292E31] backdrop-blur-md border-b border-white/30 shadow-lg">
             <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
 
                 <h1 class="text-2xl font-bold text-white flex items-center gap-2">
@@ -26,7 +27,7 @@
 
                 <ul class="hidden md:flex items-center gap-8 text-sm text-white">
                     <li>
-                        <a href="#home" class="hover:text-teal-400 transition group items-center gap-2 flex duration-300"><!-- Icons8 SVG -->
+                        <a href="#home" class="bg-white/10 border border-white/20 rounded-lg px-3 py-2 shadow-md hover:text-teal-400 transition group items-center gap-2 flex duration-300"><!-- Icons8 SVG -->
                             <svg class="w-5 h-5 transition duration-300" 
                                 fill="currentColor" 
                                 viewBox="0 0 24 24">
@@ -34,10 +35,10 @@
                             </svg>HOME
                         </a>
                     </li>
-                    <li><a href="#about" class="hover:text-teal-400 transition">ABOUT</a></li>
-                    <li><a href="#skills" class="hover:text-teal-400 transition">SKILLS</a></li>
-                    <li><a href="#projects" class="hover:text-teal-400 transition">PROJECTS</a></li>
-                    <li><a href="#contact" class="hover:text-teal-400 transition">CONTACT</a></li>
+                    <li><a href="#about" class="hover:text-teal-400 px-3 py-2 hover:border-b transition">ABOUT</a></li>
+                    <li><a href="#skills" class="hover:text-teal-400 px-3 py-2 hover:border-b transition">SKILLS</a></li>
+                    <li><a href="#projects" class="hover:text-teal-400 px-3 py-2 hover:border-b transition">PROJECTS</a></li>
+                    <li><a href="#contact" class="hover:text-teal-400 px-3 py-2 hover:border-b transition">CONTACT</a></li>
                 </ul>
 
                 <div class="flex items-center gap-4">
@@ -69,7 +70,7 @@
         </nav>
 
         <!-- Hero Section -->
-       <section name="heroSection" class="w-full bg-[#1C1F21] py-16 px-6">
+       <section name="heroSection" class="w-full bg-[#0B0F13] py-16 px-6">
             <div class="max-w-[1200px] mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-8">
 
                 <!-- Text Content -->
@@ -99,45 +100,76 @@
             </div>
         </section>
 
+        <!--Skills Section-->
+       <section>
+
+       </section>
+
         <!--Major Projects-->
         <section name="Major_Projects" class="relative py-16 px-6">
             <div class="max-w-[1200px] mx-auto">
-                <h2 class="bg-[#1E2122]/80 backdrop-blur-sm p-3 text-2xl md:text-3xl font-bold text-white drop-shadow-[0px_2px_1px_rgba(255,255,255,0.5)] mb-8 text-center">Major Projects</h2>
+
+                <!-- Section Title -->
+                <h2 class="bg-[#1C1F21] backdrop-blur-sm p-3 text-2xl md:text-3xl font-bold text-white drop-shadow-[0px_2px_1px_rgba(255,255,255,0.5)] mb-8 text-center">Major Projects</h2>
+                
+                <!-- Projects Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Project Card 1 -->
-                    <div class="rounded-lg hover:drop-shadow-[0px_3px_2px_rgba(0,255,255,0.7)] hover:scale-[1.02] hover:z-10 relative transition-all duratioc-300" style="background: #00071c;
+                     <div class="rounded-lg hover:drop-shadow-[0px_3px_2px_rgba(0,255,255,0.7)] hover:scale-[1.02] hover:z-10 relative transition-all duration-300" style="background: #00071c;
+background: linear-gradient(90deg, rgba(0, 7, 28, 1) 0%, rgba(0, 28, 28, 1) 100%);">
+                        <img src="assets/ProjectManagementApp.png" alt="Project 3" class="w-full h-48 object-cover text-white rounded-t-lg bg-[#1E2122]/80 backdrop-blur-sm border-b border-white/20">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-white mb-2">Project Management Platform</h3>
+                            <p class="text-white/80 text-sm mb-4">Developing a centralized platform for college final year projects, enabling submission, tracking, and collaboration.</p>
+                            <div class="mt-6 flex justify-center lg:justify-start gap-4">
+                                <a href="#" class="bg-teal-400 text-black px-6 py-2 rounded-lg text-sm font-medium hover:bg-teal-300 transition shadow-md backdrop-blur-sm hover:shadow-lg">
+                                    GitHub Repo <span class="text-[1rem] inline-block">»</span>
+                                </a>
+                                <a href="#" class="bg-transparent border border-white/50 text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-white/20 transition shadow-md backdrop-blur-sm hover:shadow-lg">
+                                    View Details <span class="text-[1rem] inline-block">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 2 -->
+                    <div class="rounded-lg hover:drop-shadow-[0px_3px_2px_rgba(0,255,255,0.7)] hover:scale-[1.02] hover:z-10 relative transition-all duration-300" style="background: #00071c;
+background: linear-gradient(90deg, rgba(0, 7, 28, 1) 0%, rgba(0, 28, 28, 1) 100%);">
+                        <img title="Currently Building" src="assets/PreOrderSystemBanner.png" alt="Project 1" class="w-full h-48 object-cover text-white rounded-t-lg bg-[#1E2122]/80 backdrop-blur-sm border-b border-white/20">
+                        <div class="p-4">
+                            <h3 title="Currently Building" class="text-xl font-semibold text-white mb-2">Smart Campus Canteen *</h3>
+                            <p class="text-white/80 text-sm mb-4">Android app streamlining campus meals through intelligent slot booking, reducing wait times and enhancing student convenience.</p>
+                            <div class="mt-6 flex justify-center lg:justify-start gap-4">
+                                <a href="https://github.com/Nav-0019/PreOrderSystem" class="bg-teal-400 text-black px-6 py-2 rounded-lg text-sm font-medium hover:bg-teal-300 transition shadow-md backdrop-blur-sm hover:shadow-lg">
+                                    GitHub Repo <span class="text-[1rem] inline-block">»</span>
+                                </a>
+                                <a href="#" class="bg-transparent border border-white/50 text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-white/20 transition shadow-md backdrop-blur-sm hover:shadow-lg">
+                                    View Details <span class="text-[1rem] inline-block">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                     <div class="rounded-lg hover:drop-shadow-[0px_3px_2px_rgba(0,255,255,0.7)] hover:scale-[1.02] hover:z-10 relative transition-all duratioc-300" style="background: #00071c;
 background: linear-gradient(90deg, rgba(0, 7, 28, 1) 0%, rgba(0, 28, 28, 1) 100%);">
                         <img src="assets/loanPredictionBanner.png" alt="Project 1" class="w-full h-48 object-cover text-white rounded-t-lg border-b border-white/20 bg-[#1E2122]/80 backdrop-blur-sm">
                         <div class="p-4">
                             <h3 class="text-xl font-semibold text-white mb-2">Loan Risk Prediction</h3>
                             <p class="text-white/80 text-sm mb-4">Predicts loan application risk using machine learning. The model analyzes applicant data to estimate the likelihood of default, aiding in safer lending decisions.</p>
-                            <a href="#" class="text-teal-400 hover:underline">View Details</a>
+                            <div class="mt-6 flex justify-center lg:justify-start gap-4">
+                                <a href="https://loanriskpredictorpy0019.streamlit.app/" class="bg-teal-400 text-black px-6 py-2 rounded-lg text-sm font-medium hover:bg-teal-300 transition shadow-md backdrop-blur-sm hover:shadow-lg">
+                                    Model Demo <span class="text-[1rem] inline-block">»</span>
+                                </a>
+                                <a href="#" class="bg-transparent border border-white/50 text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-white/20 transition shadow-md backdrop-blur-sm hover:shadow-lg">
+                                    View Details <span class="text-[1rem] inline-block">→</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <!-- Project Card 2 -->
-                    <div class="rounded-lg hover:drop-shadow-[0px_3px_2px_rgba(0,255,255,0.7)] hover:scale-[1.02] hover:z-10 relative transition-all duration-300" style="background: #00071c;
-background: linear-gradient(90deg, rgba(0, 7, 28, 1) 0%, rgba(0, 28, 28, 1) 100%);">
-                        <img src="assets/project1.png" alt="Project 1" class="w-full h-48 object-cover text-white rounded-t-lg bg-[#1E2122]/80 backdrop-blur-sm border-b border-white/20">
-                        <div class="p-4">
-                            <h3 class="text-xl font-semibold text-white mb-2">E-commerce Website</h3>
-                            <p class="text-white/80 text-sm mb-4">A responsive online store built with React and Node.js, featuring user authentication and a shopping cart.</p>
-                            <a href="#" class="text-teal-400 hover:underline">View Details</a>
-                        </div>
-                    </div>
-                    <!-- Project Card 3 -->
-                    <div class="rounded-lg hover:drop-shadow-[0px_3px_2px_rgba(0,255,255,0.7)] hover:scale-[1.02] hover:z-10 relative transition-all duration-300" style="background: #00071c;
-background: linear-gradient(90deg, rgba(0, 7, 28, 1) 0%, rgba(0, 28, 28, 1) 100%);">
-                        <img src="assets/project3.png" alt="Project 3" class="w-full h-48 object-cover text-white rounded-t-lg bg-[#1E2122]/80 backdrop-blur-sm border-b border-white/20">
-                        <div class="p-4">
-                            <h3 class="text-xl font-semibold text-white mb-2">Machine Learning Model</h3>
-                            <p class="text-white/80 text-sm mb-4">A predictive model developed using Python and scikit-learn, achieving 95% accuracy on a classification task.</p>
-                            <a href="#" class="text-teal-400 hover:underline">View Details</a>    
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>
-
     </div>
 
     <script>
