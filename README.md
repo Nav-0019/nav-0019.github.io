@@ -1,5 +1,5 @@
 ### 👨‍💻 Shubham | Portfolio
-**Web Developer & Data Scientist** Welcome to my professional portfolio repository. [cite_start]I am a Data Science student and developer focused on crafting seamless web experiences and solving complex data mysteries through code[cite: 1].
+**Web Developer & Data Scientist** Welcome to my professional portfolio repository. I am a Data Science student and developer focused on crafting seamless web experiences and solving complex data mysteries through code.
 
 ---
 
@@ -8,7 +8,7 @@
 #### **Major Projects**
 * **💳 Loan Risk Prediction:** A machine learning model that analyzes applicant data to estimate default likelihood and assist in lending decisions.
 * **🎓 Project Management Platform:** A centralized system for college final year projects, enabling submission, tracking, and collaboration (In Development).
-* [cite_start]**🍱 Smart Campus Canteen:** An Android application designed to streamline campus meals through intelligent slot booking to reduce wait times (In Development)[cite: 1].
+* **🍱 Smart Campus Canteen:** An Android application designed to streamline campus meals through intelligent slot booking to reduce wait times (In Development).
 
 #### **Minor Projects**
 * **⚔️ isekai-gaming-webapp:** A fantasy-themed web application.
@@ -20,8 +20,8 @@
 
 * **Languages:** Python, JavaScript, HTML5, CSS3, SQL, Kotlin.
 * **Frameworks & Tools:** Flask, Android Development, Git, Docker.
-* [cite_start]**Databases:** Experience with NoSQL systems including Redis and Cassandra[cite: 1].
-* [cite_start]**Environment:** Professional development handled via WSL2 and Ubuntu[cite: 1].
+* **Databases:** Experience with NoSQL systems including Redis and Cassandra.
+* **Environment:** Professional development handled via WSL2 and Ubuntu.
 
 ---
 
@@ -35,7 +35,7 @@
 ### 🌐 Connect with Me
 * **Portfolio:** [nav-0019.github.io](https://nav-0019.github.io/)
 * **Email:** shubhamchauhan0019@gmail.com
-* [cite_start]**Location:** India [cite: 1]
+* **Location:** India 
 
 ---
 *© 2026 Shubham. Designed & Built with a focus on creativity and technology.*
