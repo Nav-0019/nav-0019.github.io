@@ -19,11 +19,7 @@
 ### 🛠️ Technical Skills
 
 * **Languages:** Python, JavaScript, HTML5, CSS3, SQL, Kotlin.
-* **Frameworks & Tools:** Flask, Android Development, Git, Docker.
-* **Databases:** Experience with NoSQL systems including Redis and Cassandra.
-* **Environment:** Professional development handled via WSL2 and Ubuntu.
-
----
+* **Frameworks & Tools:** Android Development, Git.---
 
 ### 📈 Competitive Programming
 * **LeetCode:** 150+ Problems Solved.
