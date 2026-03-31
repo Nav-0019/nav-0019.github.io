@@ -1,46 +1,41 @@
-# 👋 Hi, I'm Nav-0019
+### 👨‍💻 Shubham | Portfolio
+**Web Developer & Data Scientist** Welcome to my professional portfolio repository. [cite_start]I am a Data Science student and developer focused on crafting seamless web experiences and solving complex data mysteries through code[cite: 1].
 
-### Data Science Student | Backend & DevOps Enthusiast
-
-I am a developer focused on building scalable backend systems and leveraging data science to solve real-world problems. Currently pursuing my studies in Bangalore, I specialize in bridging the gap between complex data analysis and robust software architecture.
-
-[](https://git.io/streak-stats)
-[](https://github.com/anuraghazra/github-readme-stats)
-
------
-
-### 🛠️ Tech Stack
-
-| Domain | Tools & Technologies |
-| :--- | :--- |
-| **Data Science** | Python, PCA & LDA Analysis, Streamlit, Pandas, NumPy |
-| **Backend & DevOps** | Linux (Ubuntu/WSL2), Docker, Redis, Cassandra |
-| **Development** | Git, GitHub, HTML/CSS, JavaScript |
-
------
+---
 
 ### 🚀 Featured Projects
 
-#### 🍱 Smart Campus Canteen System
+#### **Major Projects**
+* **💳 Loan Risk Prediction:** A machine learning model that analyzes applicant data to estimate default likelihood and assist in lending decisions.
+* **🎓 Project Management Platform:** A centralized system for college final year projects, enabling submission, tracking, and collaboration (In Development).
+* [cite_start]**🍱 Smart Campus Canteen:** An Android application designed to streamline campus meals through intelligent slot booking to reduce wait times (In Development)[cite: 1].
 
-A technical solution designed to optimize campus dining. It utilizes a **slot-based algorithm** to manage pre-orders, significantly reducing peak-hour waiting times and improving resource allocation.
+#### **Minor Projects**
+* **⚔️ isekai-gaming-webapp:** A fantasy-themed web application.
+* **🎰 isekai-Bet-App:** A lighthearted betting application.
 
-#### 🏥 Strategic Impact of Healthcare Infrastructure
+---
 
-A comprehensive data-driven thesis analyzing **HIV service resilience in India (2019-2023)**. This project employed **Principal Component Analysis (PCA)** and **Linear Discriminant Analysis (LDA)** to evaluate how infrastructure impacts epidemic control.
+### 🛠️ Technical Skills
 
-#### 💳 Loan Risk Predictor
+* **Languages:** Python, JavaScript, HTML5, CSS3, SQL, Kotlin.
+* **Frameworks & Tools:** Flask, Android Development, Git, Docker.
+* [cite_start]**Databases:** Experience with NoSQL systems including Redis and Cassandra[cite: 1].
+* [cite_start]**Environment:** Professional development handled via WSL2 and Ubuntu[cite: 1].
 
-An end-to-end machine learning application that assesses credit risk.
+---
 
-  * **Live Demo:** [View on Streamlit](https://www.google.com/search?q=https://share.streamlit.io/nav-0019/loan-risk-predictor)
-  * **Highlights:** Focuses on predictive accuracy and user-friendly deployment for financial assessment.
+### 📈 Competitive Programming
+* **LeetCode:** 150+ Problems Solved.
+* **Ranking:** Top 5%.
+* **Stats:** Easy: 215 | Medium: 30 | Hard: 0.
 
------
+---
 
-### 🌐 Connect With Me
+### 🌐 Connect with Me
+* **Portfolio:** [nav-0019.github.io](https://nav-0019.github.io/)
+* **Email:** shubhamchauhan0019@gmail.com
+* [cite_start]**Location:** India [cite: 1]
 
-  * **Portfolio:** [nav-0019.github.io](https://www.google.com/search?q=https://nav-0019.github.io/)
-  * **GitHub:** [@Nav-0019](https://www.google.com/search?q=https://github.com/Nav-0019)
-
------
+---
+*© 2026 Shubham. Designed & Built with a focus on creativity and technology.*
