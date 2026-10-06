@@ -1,455 +1,403 @@
-<!DOCTYPE html class="scroll-smooth">
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubham | Portfolio</title>
+    <title>Shubham Singh Chauhan | Portfolio</title>
     <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="min-h-screen">
-    <!---Background Overlay-->
-    <div id="home" class="min-h-screen bg-[#0B0F13]">
-
-        <!-- Navbar -->
-        <nav class="sticky top-0 w-full z-50 bg-[#292E31] backdrop-blur-lg border-b border-white/30 shadow-lg">
-            <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
-
-                <h1 class="text-2xl font-bold text-white flex items-center gap-2">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                        class="w-6 h-6 text-teal-400 drop-shadow-[0_0_6px_rgba(45,212,191,0.7)]"
-                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
-                    </svg>Shubham
-                </h1>
-
-                <ul class="hidden md:flex items-center gap-8 text-sm text-white">
-                    <li>
-                        <a href="#home" class="bg-white/10 border border-white/20 rounded-lg px-3 py-2 shadow-md hover:text-teal-400 transition group items-center gap-2 flex duration-300"><!-- Icons8 SVG -->
-                            <svg class="w-5 h-5 transition duration-300" 
-                                fill="currentColor" 
-                                viewBox="0 0 24 24">
-                                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-                            </svg>HOME
-                        </a>
-                    </li>
-                    <li class="group relative"><a href="#about" class="hover:text-teal-400 px-3 py-2 transition duration-300">ABOUT</a><span class="absolute w-0 h-[1px] -bottom-1 left-0 bg-teal-300 group-hover:w-full transition-all duration-300"></span></li>
-                    <li class="group relative"><a href="#skills" class="hover:text-teal-400 px-3 py-2 transition duration-300">SKILLS</a><span class="absolute w-0 h-[1px] -bottom-1 left-0 bg-teal-300 group-hover:w-full transition-all duration-300"></span></li>
-                    <li class="group relative"><a href="#projects" class="hover:text-teal-400 px-3 py-2 transition duration-300">PROJECTS</a><span class="absolute w-0 h-[1px] -bottom-1 left-0 bg-teal-300 group-hover:w-full transition-all duration-300"></span></li>
-                    <li class="group relative"><a href="#contact" class="hover:text-teal-400 px-3 py-2 transition duration-300">CONTACT</a><span class="absolute w-0 h-[1px] -bottom-1 left-0 bg-teal-300 group-hover:w-full transition-all duration-300"></span></li>
-                </ul>
-
-                <div class="flex items-center gap-4">
-                    <a href="docs/Resume.pdf" class="hidden md:block bg-teal-400 text-black px-4 py-1.5 rounded-lg text-sm font-medium hover:bg-teal-300 transition">
-                        RESUME
-                    </a>
-
-                    <button id="menu-btn" class="md:hidden text-white text-2xl">
-                        <span class="block w-6 h-1 bg-white mb-1"></span>
-                        <span class="block w-6 h-1 bg-white mb-1"></span>
-                        <span class="block w-6 h-1 bg-white"></span>
-                    </button>
-
-                </div>
-            </div>
-
-            <div id="mobile-menu" class="md:hidden overflow-hidden max-h-0 opacity-0 transition-all duration-500 ">
-                <ul class="flex flex-col items-center gap-6 py-6 text-sm text-white">
-                    <li><a href="#home" class="block w-48 max-w-[220px] mx-auto px-6 py-2 border border-white/20 rounded-lg shadow-md  text-center hover:shadow-lg hover:text-teal-400 bg-white/20 hover:bg-white/30 transition ">HOME</a></li>
-                    <li><a href="#about" class="block w-48 max-w-[220px] mx-auto px-6 py-2 border border-white/20 rounded-lg shadow-md  text-center hover:shadow-lg hover:text-teal-400 hover:bg-white/10 transition">ABOUT</a></li>
-                    <li><a href="#skills" class="block w-48 max-w-[220px] mx-auto px-6 py-2 border border-white/20 rounded-lg shadow-md  text-center hover:shadow-lg hover:text-teal-400 hover:bg-white/10 transition">SKILLS</a></li>
-                    <li><a href="#projects" class="block w-48 max-w-[220px] mx-auto px-6 py-2 border border-white/20 rounded-lg shadow-md  text-center hover:shadow-lg hover:text-teal-400 hover:bg-white/10 transition">PROJECTS</a></li>
-                    <li><a href="#contact" class="block w-48 max-w-[220px] mx-auto px-6 py-2 border border-white/20 rounded-lg shadow-md  text-center hover:shadow-lg hover:text-teal-400 hover:bg-white/10 transition">CONTACT</a></li>
-                    <li><a href="docs/Resume.pdf" class="block w-48 max-w-[220px] mx-auto px-6 py-2 border border-teal-800 rounded-lg bg-teal-500 text-black text-center text-sm font-medium hover:bg-teal-400 transition shadow-md  hover:shadow-lg">
-                        RESUME
-                    </a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <!-- Hero Section -->
-       <section id="about" name="heroSection" class="w-full py-16 px-6 relative">
-            <div class="max-w-[1200px] mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-8 bg-[#fff]/2 p-6 rounded-lg shadow-lg  border border-white/20">
-
-                <!-- Text Content -->
-                <div class="flex-1 text-center lg:text-left flex flex-col justify-center gap-4">
-                    <h2 class="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">Hi, it's Shubham</h2>
-                    <h4 class="text-xl md:text-2xl text-teal-300 drop-shadow-md mt-2">Web Developer & Data Scientist</h4>
-                    <h6 class="text-xl md:text-xl text-[#BDBDBD]/70 drop-shadow-sm mt-2">Python • SQL • Data Analysis • Machine Learning</h6>
-                    <p class="text-white/80 text-sm md:text-base drop-shadow-sm mt-4 text-justify leading-relaxed">
-                        Crafting seamless web experiences and unraveling data mysteries with code. Welcome to my portfolio, where creativity meets technology. Explore my projects and let's build something amazing together!
-                    </p>
-                
-                    <div class="mt-6 flex justify-center lg:justify-start gap-4">
-                        <a href="#projects" class="bg-teal-400 text-black px-6 py-2 rounded-lg text-sm font-medium hover:bg-teal-300 transition shadow-md  hover:shadow-lg">
-                            View Projects <span class="text-[1rem] inline-block">»</span>
-                        </a>
-                        <a href="mailto:shubhamchauhan0019@gmail.com" class="bg-transparent border border-white/50 text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-white/20 transition shadow-md  hover:shadow-lg">
-                            Hire Me <span class="text-[1rem] inline-block">→</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Image -->
-                <div class="flex-none w-[300px] flex justify-center lg:justify-end mb-6 lg:mb-0">
-                    <img src="assets/profilePic.jpeg" alt="Shubham's Profile Picture" class="w-full h-auto border-4 border-teal-400 shadow-lg drop-shadow-[0_0_5px_rgba(45,212,191,0.7)] rounded-full">
-                </div>
-
-            </div>
-        </section>
-
-        <!--Skills Section-->
-       <section id="skills" name="Skills" class="relative py-16 px-6 ">
-            <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-8">
-
-                <!-- Technical Skills (Left) -->
-                <div class="flex-1 space-y-6">
-                <h2 class="text-2xl font-bold text-white text-center mb-6 bg-gradient-to-r from-teal-400 to-blue-500 inline-block px-4 py-2 rounded-lg shadow-lg w-full mx-auto md:mx-0">
-                    Technical Skills
-                </h2>
-
-                <!-- Skills Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-                    <!-- Languages -->
-                    <div class="bg-white/5  rounded-2xl p-6 text-center md:text-left hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-2xl border border-white/10">
-                    <h3 class="text-xl font-semibold text-white mb-4">Languages</h3>
-                    <div class="flex flex-wrap justify-center md:justify-start gap-2">
-                        <span class="bg-gradient-to-r from-teal-400 to-blue-500 text-black px-3 py-1 rounded-full text-sm font-medium">Python</span>
-                        <span class="bg-gradient-to-r from-teal-400 to-blue-500 text-black px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
-                        <span class="bg-gradient-to-r from-teal-400 to-blue-500 text-black px-3 py-1 rounded-full text-sm font-medium">HTML5</span>
-                        <span class="bg-gradient-to-r from-teal-400 to-blue-500 text-black px-3 py-1 rounded-full text-sm font-medium">CSS3</span>
-                        <span class="bg-gradient-to-r from-teal-400 to-blue-500 text-black px-3 py-1 rounded-full text-sm font-medium">SQL</span>
-                    </div>
-                    </div>
-
-                    <!-- Frameworks -->
-                    <div class="bg-white/5  rounded-2xl p-6 text-center md:text-left hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-2xl border border-white/10">
-                    <h3 class="text-xl font-semibold text-white mb-4">Frameworks</h3>
-                    <div class="flex flex-wrap justify-center md:justify-start gap-2">
-                        <span class="bg-gradient-to-r from-purple-500 to-pink-500 text-black px-3 py-1 rounded-full text-sm font-medium">Flask</span>
-                        <span class="bg-gradient-to-r from-purple-500 to-pink-500 text-black px-3 py-1 rounded-full text-sm font-medium">Android Development (Kotlin)</span>
-                    </div>
-                    </div>
-
-                    <!-- Tools -->
-                    <div class="bg-white/5  rounded-2xl p-6 text-center md:text-left hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-2xl border border-white/10">
-                    <h3 class="text-xl font-semibold text-white mb-4">Tools</h3>
-                    <div class="flex flex-wrap justify-center md:justify-start gap-2">
-                        <span class="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-3 py-1 rounded-full text-sm font-medium">Git</span>
-                        <span class="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-3 py-1 rounded-full text-sm font-medium">Docker</span>
-                    </div>
-                    </div>
-
-                </div>
-                </div>
-
-                <!-- LeetCode Stats (Right) -->
-                <div class="w-full md:w-1/3 bg-white/5  rounded-2xl p-6 text-center shadow-lg hover:shadow-2xl transition-transform hover:scale-105 border border-white/10">
-                <div class="flex flex-col items-center gap-4">
-                    <img src="assets/leetcodeLogo.png" alt="LeetCode Logo" class="w-12 h-12 object-contain">
-                    <h4 class="text-white text-sm font-semibold">LEETCODE</h4>
-                    <div class="flex flex-col items-center gap-1">
-                    <span class="text-teal-400 text-sm font-medium">Problems Solved: 150+</span>
-                    <span class="text-teal-400 text-sm font-medium">Ranking: Top 5%</span>
-                    </div>
-                    <p class="text-white/80 text-sm">
-                    <span class="text-teal-300">Easy</span> 215 | 
-                    <span class="text-yellow-300">Medium</span> 30 | 
-                    <span class="text-red-300">Hard</span> 0
-                    </p>
-                    <a href="https://leetcode.com/u/navneetsingh94520/" target="_blank" class="bg-gradient-to-r from-teal-400 to-blue-500 text-black px-4 py-2 rounded-lg text-sm font-medium hover:from-blue-500 hover:to-teal-400 transition shadow-md hover:shadow-2xl">
-                    View LeetCode Profile <span class="text-[1rem] inline-block">»</span>
-                    </a>
-                </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!--Major Projects-->
-        <section id="projects" name="Major_Projects" class="relative py-16 px-6">
-            <div class="max-w-[1200px] mx-auto">
-
-                <!-- Section Title -->
-                <h3 class="bg-gradient-to-r from-teal-400 to-blue-500 p-3 text-1xl md:text-2xl font-bold text-white drop-shadow-[0px_2px_1px_rgba(255,255,255,0.5)] mb-8 text-center">Major Projects</h3>
-                
-                <!-- Projects Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                    <!-- Project Card 1 -->
-                     <div class="rounded-lg hover:drop-shadow-[0px_3px_2px_rgba(0,255,255,0.7)] hover:scale-[1.02] hover:z-10 relative transition-all duratioc-300" style="background: #00071c; background: linear-gradient(90deg, rgba(0, 7, 28, 1) 0%, rgba(0, 28, 28, 1) 100%);">
-                        <img src="assets/loanPredictionBanner.png" alt="Project 1" class="w-full h-48 object-cover text-white rounded-t-lg border-b border-white/20 bg-[#1E2122]/80 ">
-                        <div class="p-4">
-                            <h3 class="text-xl font-semibold text-white mb-2">Loan Risk Prediction</h3>
-                            <p class="text-white/80 text-sm mb-4">Predicts loan application risk using machine learning. The model analyzes applicant data to estimate the likelihood of default, aiding in safer lending decisions.</p>
-                            <div class="mt-6 flex justify-center lg:justify-start gap-4">
-                                <a href="https://loanriskpredictorpy0019.streamlit.app/" class="bg-teal-400 text-black px-6 py-2 rounded-lg text-sm font-medium hover:bg-teal-300 transition shadow-md  hover:shadow-lg">
-                                    Model Demo <span class="text-[1rem] inline-block">»</span>
-                                </a>
-                                <a href="pages/LoanPrediction.html" class="bg-transparent border border-white/50 text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-white/20 transition shadow-md  hover:shadow-lg">
-                                    View Details <span class="text-[1rem] inline-block">→</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 2 -->
-                     <div class="rounded-lg hover:drop-shadow-[0px_3px_2px_rgba(0,255,255,0.7)] hover:scale-[1.02] hover:z-10 relative transition-all duration-300" style="background: #00071c; background: linear-gradient(90deg, rgba(0, 7, 28, 1) 0%, rgba(0, 28, 28, 1) 100%);">
-                        <img src="assets/ProjectManagementApp.png" alt="Project 3" class="w-full h-48 object-cover text-white rounded-t-lg bg-[#1E2122]/80  border-b border-white/20">
-                        <div class="p-4 relative group">
-                            <h3 class=" relative text-xl font-semibold text-white mb-2">Project Management Platform * <span class="absolute top-1 right-3 px-2 py-1 bg-white text-black opacity-0 group-hover:opacity-100 text-[14px] border rounded-xl">Currently in development. Soon will available.</span></h3>
-                            <p class="text-white/80 text-sm mb-4">Developing a centralized platform for college final year projects, enabling submission, tracking, and collaboration.</p>
-                            <div class="mt-6 flex justify-center lg:justify-start gap-4">
-                                <a href="#" class="pointer-events-none text-gray-500 cursor-not-allowed bg-teal-400 px-6 py-2 rounded-lg text-sm font-medium hover:bg-teal-300 transition shadow-md  hover:shadow-lg">
-                                    GitHub Repo <span class="text-[1rem] inline-block">»</span>
-                                </a>
-                                <a href="#" class="pointer-events-none text-gray-500 cursor-not-allowed bg-transparent border border-white/50 px-6 py-2 rounded-lg text-sm font-medium hover:bg-white/20 transition shadow-md  hover:shadow-lg">
-                                    View Details <span class="text-[1rem] inline-block">→</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Project Card 3 -->
-                    <div class="rounded-lg hover:drop-shadow-[0px_3px_2px_rgba(0,255,255,0.7)] hover:scale-[1.02] hover:z-10 relative transition-all duration-300" style="background: #00071c; background: linear-gradient(90deg, rgba(0, 7, 28, 1) 0%, rgba(0, 28, 28, 1) 100%);">
-                        <img title="Currently Building" src="assets/PreOrderSystemBanner.png" alt="Project 1" class="w-full h-48 object-cover text-white rounded-t-lg bg-[#1E2122]/80  border-b border-white/20">
-                        <div class="p-4 relative group">
-                            <h3 class="relative text-xl font-semibold text-white mb-2">Smart Campus Canteen *<span class="absolute top-1 right-3 px-2 py-1 bg-white text-black opacity-0 group-hover:opacity-100 text-[14px] border rounded-xl">Currently in development. Soon will available.</span></h3>
-                            <p class="text-white/80 text-sm mb-4">Android app streamlining campus meals through intelligent slot booking, reducing wait times and enhancing student convenience.</p>
-                            <div class="mt-6 flex justify-center lg:justify-start gap-4">
-                                <a href="https://github.com/Nav-0019/PreOrderSystem" class="pointer-events-none text-gray-500 cursor-not-allowed bg-teal-400 px-6 py-2 rounded-lg text-sm font-medium hover:bg-teal-300 transition shadow-md  hover:shadow-lg">
-                                    GitHub Repo <span class="text-[1rem] inline-block">»</span>
-                                </a>
-                                <a href="#" class="pointer-events-none text-gray-500 cursor-not-allowed bg-transparent border border-white/50 px-6 py-2 rounded-lg text-sm font-medium hover:bg-white/20 transition shadow-md  hover:shadow-lg">
-                                    View Details <span class="text-[1rem] inline-block">→</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-            </div>
-        </section>
-
-        <!--Minor Projects-->
-        <section id="toggle_minor-projects" class="relative py-16 px-6 text-white">
-            <div class="max-w-[1200px] mx-auto py-6 px-6 bg-[#ffffff]/20 rounded-lg ">
-
-                <!-- Heading -->
-                <div class="mb-8 text-center w-full text-1xl md:text-2xl font-bold text-white text-size-3xl bg-gradient-to-r from-teal-400 to-blue-500 inline-block px-4 py-2 rounded-lg shadow-lg">
-                    <h2">
-                        Minor Projects
-                    </h2>
-                </div>
-
-                <!-- Grid -->
-                <div">
-
-                    <!-- Project Card --> 
-                   <div class="mb-6 p-4 rounded-lg hover:drop-shadow-[0px_3px_2px_rgba(0,255,255,0.7)] hover:scale-[1.02] hover:z-10 relative transition-all duration-300"
-                        style="background: linear-gradient(90deg, rgba(0, 7, 28, 1) 0%, rgba(0, 28, 28, 1) 100%);">
-
-                        <!-- Header -->
-                        <div onclick="toggleProject(this)" class="flex justify-between items-center cursor-pointer">
-                            <h3 class="text-xl font-semibold text-white mb-2">isekai-gaming-webapp</h3>
-
-                            <!-- Arrow -->
-                            <svg class="w-5 h-5 text-white transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-width="2" d="M19 9l-7 7-7-7"/>
-                            </svg>
-                        </div>
-
-                        <!-- Hidden Content -->
-                        <div class="max-h-0 overflow-hidden transition-all duration-500">
-
-                            <p class="text-sm text-white/80 mt-2 p-4 rounded-lg bg-[#1E2122]/80  border border-white/20 text-justify">
-                                This project is an Isekai-themed RPG where players level up by matching monster attack numbers,
-                                progressing through ranks and weapons until defeating the final boss.
-                            </p>
-
-                            <div class="flex gap-4 px-4 pb-4 mt-4">
-                                <a href="https://Nav-0019.github.io/Isekai-Web-Game/" target="_blank"
-                                class="px-3 py-1 bg-white text-black rounded-md text-sm">
-                                    Play
-                                </a>
-                                <a href="https://github.com/Nav-0019/Isekai-Web-Game" target="_blank"
-                                class="px-3 py-1 border border-white text-white rounded-md text-sm">
-                                    GitHub
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Project Card --> 
-                   <div class="mb-6 p-4 rounded-lg hover:drop-shadow-[0px_3px_2px_rgba(0,255,255,0.7)] hover:scale-[1.02] hover:z-10 relative transition-all duration-300"
-                        style="background: linear-gradient(90deg, rgba(0, 7, 28, 1) 0%, rgba(0, 28, 28, 1) 100%);">
-
-                        <!-- Header -->
-                        <div onclick="toggleProject(this)" class="flex justify-between items-center cursor-pointer">
-                            <h3 class="text-xl font-semibold text-white mb-2">isekai-Bet-App (funny)</h3>
-
-                            <!-- Arrow -->
-                            <svg class="w-5 h-5 text-white transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-width="2" d="M19 9l-7 7-7-7"/>
-                            </svg>
-                        </div>
-
-                        <!-- Hidden Content -->
-                        <div class="max-h-0 overflow-hidden transition-all duration-500">
-
-                            <p class="text-sm text-white/80 mt-2 p-4 rounded-lg bg-[#1E2122]/80  border border-white/20 text-justify">
-                                This project is an Isekai-themed RPG where players level up by matching monster attack numbers, progressing through ranks and weapons with funny sound effects, and includes a Kotlin APK version available for download.
-                            </p>
-
-                            <div class="flex gap-4 px-4 pb-4 mt-4">
-                                <a href="https://drive.google.com/file/d/1XeseX0PSqIW9amNz4uKI1Pit6Q21Cve3/view?usp=sharing" target="_blank"
-                                class="px-3 py-1 bg-white text-black rounded-md text-sm">
-                                    Download APK
-                                </a>
-                                <a href="https://github.com/Nav-0019/Isekai_Game_App/" target="_blank"
-                                class="px-3 py-1 border border-white text-white rounded-md text-sm">
-                                    GitHub
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer id="contact" class="bg-[#0B0F13] text-gray-300 pt-16 pb-8 px-6 border-t border-white/10">
-
-            <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-
-                <!-- Contact -->
-                <div>
-                    <h2 class="text-2xl font-semibold text-white mb-4 tracking-wide">
-                        Contact
-                    </h2>
-
-                    <!-- Glass Card -->
-                    <div class="space-y-3 text-sm p-5 rounded-xl 
-                                bg-white/5 
-                                border border-white/10 
-                                shadow-lg shadow-black/30">
-
-                        <div class="flex items-center gap-2 hover:text-teal-400 transition">
-                            <img src="assets/emailIcon.gif" alt="Email" class="w-4 h-4">
-                            <span class="break-all">shubhamchauhan0019@gmail.com</span>
-                        </div>
-
-                        <div class="flex items-center gap-2 hover:text-teal-400 transition">
-                            <img src="assets/phoneIcon.gif" alt="Phone" class="w-4 h-4">
-                            <span>+91 7310347742</span>
-                        </div>
-
-                        <div class="flex items-center gap-2 hover:text-teal-400 transition">
-                            <img src="assets/locationIcon.gif" alt="Location" class="w-4 h-4">
-                            <span>India</span>
-                        </div>
-
-                    </div>
-
-                    <!-- Social Links -->
-                    <div class="flex gap-6 mt-6 text-sm">
-                        <a href="https://github.com/Nav-0019" target="_blank"
-                        class="relative group hover:text-teal-400 transition">
-                            GitHub
-                            <span class="absolute left-0 -bottom-1 w-0 h-[1px] bg-teal-400 transition-all group-hover:w-full"></span>
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/shubham-ns/" target="_blank"
-                        class="relative group hover:text-teal-400 transition">
-                            LinkedIn
-                            <span class="absolute left-0 -bottom-1 w-0 h-[1px] bg-teal-400 transition-all group-hover:w-full"></span>
-                        </a>
-
-                        <a href="https://x.com/ShubhamSin0019" target="_blank"
-                        class="relative group hover:text-teal-400 transition">
-                            Twitter
-                            <span class="absolute left-0 -bottom-1 w-0 h-[1px] bg-teal-400 transition-all group-hover:w-full"></span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- CTA -->
-                <div class="text-center md:text-right">
-                    <p class="text-sm mb-4 text-gray-400">
-                        Interested in working together?
-                    </p>
-
-                    <a href="mailto:shubhamchauhan0019@gmail.com" class="inline-block px-8 py-3 rounded-full text-white bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-400 hover:to-cyan-400 transition duration-300 shadow-lg shadow-teal-500/30 hover:shadow-teal-400/60 hover:scale-105">
-                        Let's Connect
-                    </a>
-                </div>
-
-            </div>
-
-            <!-- Bottom -->
-            <div class="mt-12 border-t border-white/10 pt-6 text-center text-xs text-gray-500">
-                © 2026 Shubham. Designed & Built by Me.
-            </div>
-
-        </footer>
-
-        <!--Floating WhatsApp Contact Button-->
-        <div class="fixed bottom-6 right-6 z-50 group">
-            <a href="https://wa.me/917310347742" target="_blank" class="relative flex items-center justify-center w-14 h-14 text-white rounded-full shadow-lg hover:bg-[#1DDB13]/30 transition duration-300 animate-bounce">
-                <!-- Icon -->
-                <img src="assets/whatsappIcon.jpg" alt="WhatsApp" class="w-12 h-12 relative z-10">
-            </a>
-        </div>
-
-    </div>
-
     <script>
-
-        document.addEventListener('DOMContentLoaded', () => {
-
-                const btn = document.getElementById('menu-btn');
-                const menubtn = document.getElementById('mobile-menu');
-
-                btn.addEventListener('click', () => {
-                    if (menubtn.classList.contains("max-h-0")) {
-                        menubtn.classList.remove("max-h-0", "opacity-0");
-                        menubtn.classList.add("max-h-96", "opacity-100");
-                    } else {
-                        menubtn.classList.remove("max-h-96", "opacity-100");
-                        menubtn.classList.add("max-h-0", "opacity-0");
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#111111',
+                        light: '#F9F9F9',
+                    },
+                    keyframes: {
+                        juggle: {
+                            '0%, 100%': { transform: 'translateY(0) rotate(0)' },
+                            '25%': { transform: 'translateY(-4px) rotate(-8deg)' },
+                            '75%': { transform: 'translateY(-4px) rotate(8deg)' }
+                        }
+                    },
+                    animation: {
+                        'spin-slow': 'spin 8s linear infinite',
+                        'juggle': 'juggle 0.6s ease-in-out infinite',
                     }
-                });
-
-                 window.addEventListener("scroll", () => {
-                    const nav = document.querySelector("nav");
-                    if (window.scrollY > 50) {
-                    nav.classList.add("bg-black/80");
-                    } else {
-                    nav.classList.remove("bg-black/80");
-                    }
-                });
-        });
-
-        function toggleProject(header) {
-            const content = header.nextElementSibling;
-            const icon = header.querySelector("svg");
-
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-                icon.classList.remove("rotate-180");
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-                icon.classList.add("rotate-180");
+                }
             }
         }
     </script>
+    <style>
+        body {
+            background-color: #E5E7EB; /* Fallback */
+            background-image: url('assets/cloud_bg.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 1rem;
+        }
+        @media (min-width: 768px) {
+            body { padding: 2rem; }
+        }
+        .main-container {
+            background-color: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            border-radius: 2rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            min-height: calc(100vh - 4rem);
+        }
+        .text-outline {
+            -webkit-text-stroke: 2px #111;
+            color: transparent;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d1d5db;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #9ca3af;
+        }
+        .project-card:hover .project-img {
+            transform: scale(1.05);
+        }
+        .project-card:hover .project-arrow {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+    </style>
+</head>
+<body class="text-dark antialiased">
+    
+    <div class="main-container flex flex-col">
+        <!-- Navbar -->
+        <nav class="flex justify-between items-center p-4 md:p-8 z-50 bg-white/80 backdrop-blur-md sticky top-0">
+            <div class="flex items-center gap-2 border border-gray-200 rounded-full px-3 py-1.5 md:px-4 md:py-2 text-[10px] md:text-sm font-medium bg-white whitespace-nowrap">
+                <span class="w-2 h-2 md:w-2.5 md:h-2.5 bg-green-500 rounded-full animate-pulse"></span>
+                Available for New Project
+            </div>
+            
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-900">
+                <a href="#work" class="hover:text-gray-500 transition">Work <span class="text-gray-400 text-xs">[3]</span></a>
+                <a href="#skills" class="hover:text-gray-500 transition">Skills <span class="text-gray-400 text-xs">[4]</span></a>
+                <a href="#achievements" class="hover:text-gray-500 transition">Achievements <span class="text-gray-400 text-xs">[2+]</span></a>
+                <a href="#contact" class="hover:text-gray-500 transition">Contact</a>
+            </div>
+            
+            <a href="docs/Resume.pdf" class="bg-dark text-white rounded-full px-4 md:px-6 py-1.5 md:py-2.5 text-xs md:text-sm font-medium hover:bg-gray-800 transition flex items-center gap-2 whitespace-nowrap">
+                Resume 
+                <svg class="w-3 h-3 md:w-4 md:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+        </nav>
+
+        <!-- Mobile Menu (Bottom Sheet or just rely on normal scrolling) -->
+        <!-- We'll keep it simple for now, the nav is accessible -->
+
+        <!-- Hero Section -->
+        <header class="flex-1 flex flex-col items-center justify-center pt-10 pb-24 px-6 md:px-8 relative">
+            
+            <!-- Massive Text -->
+            <div class="text-center relative z-0 w-full flex flex-col justify-center items-center mt-4 md:mt-6 px-2">
+                <div class="flex justify-center items-center gap-2 md:gap-6">
+                    <h1 class="font-heading font-black text-[13vw] md:text-[10vw] leading-[0.8] tracking-tighter uppercase text-outline select-none">SHUB</h1>
+                    <h1 class="font-heading font-black text-[13vw] md:text-[10vw] leading-[0.8] tracking-tighter uppercase text-dark select-none">HAM</h1>
+                </div>
+                <div class="flex justify-center items-center gap-2 md:gap-6 mt-1 md:mt-2">
+                    <h1 class="font-heading font-black text-[9.5vw] md:text-[8vw] leading-[0.8] tracking-tighter uppercase text-dark select-none">SINGH</h1>
+                    <h1 class="font-heading font-black text-[9.5vw] md:text-[8vw] leading-[0.8] tracking-tighter uppercase text-outline select-none">CHAUHAN</h1>
+                </div>
+            </div>
+            
+            <!-- Image Overlapping -->
+            <div class="relative md:absolute md:top-[60%] md:left-1/2 md:-translate-x-1/2 md:-translate-y-[20%] z-10 w-[80vw] md:w-[28vw] max-w-[380px] mt-10 md:mt-0">
+                <img src="assets/profilePic.png" alt="Shubham" class="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500" style="clip-path: inset(0 4% 0 4%); -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%); mask-image: linear-gradient(to bottom, black 75%, transparent 100%); image-rendering: high-quality;">
+            </div>
+
+            <!-- Bottom Hero Info -->
+            <div class="w-full flex flex-col md:flex-row justify-between items-center md:items-end mt-10 md:mt-[8vw] z-20 gap-8 text-center md:text-left relative">
+                <div class="flex flex-col gap-4 max-w-sm items-center md:items-start">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-dark leading-tight">Web Developer &<br>Data Scientist</h2>
+                    <p class="text-gray-500 text-sm md:text-base leading-relaxed">Designing digital products and data models that are clear, usable, and conversion focused. Crafting seamless web experiences and unraveling data mysteries with code.</p>
+                    <a href="#contact" class="mt-4 bg-dark text-white rounded-full px-7 py-3.5 w-fit flex items-center gap-2 hover:bg-gray-800 transition shadow-lg hover:shadow-xl hover:-translate-y-1 duration-300">
+                        Let's collaborate
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+                <div class="flex flex-wrap justify-center md:flex-col gap-3">
+                    <a href="https://github.com/Nav-0019" class="border border-gray-200 bg-white rounded-full px-5 py-2 flex items-center gap-3 hover:border-gray-300 hover:shadow-md transition text-sm font-medium text-gray-700">
+                        <svg class="w-4 h-4 text-dark" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg> 
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/shubham-ns/" class="border border-gray-200 bg-white rounded-full px-5 py-2 flex items-center gap-3 hover:border-gray-300 hover:shadow-md transition text-sm font-medium text-gray-700">
+                        <svg class="w-4 h-4 text-dark" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://leetcode.com/u/navneetsingh94520/" class="border border-gray-200 bg-white rounded-full px-5 py-2 flex items-center gap-3 hover:border-gray-300 hover:shadow-md transition text-sm font-medium text-gray-700">
+                        <img src="assets/leetcodeLogo.png" class="w-4 h-4 grayscale opacity-80" alt="LeetCode"> 
+                        LeetCode
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Selected Work Section -->
+        <section id="work" class="py-24 px-6 md:px-12 border-t border-gray-100 bg-white relative">
+            <div class="text-center mb-16">
+                <h2 class="font-heading font-medium text-5xl md:text-6xl text-gray-200 tracking-wider absolute top-10 left-1/2 -translate-x-1/2 w-full select-none z-0">PORTFOLIO</h2>
+                <h2 class="font-heading font-medium text-4xl md:text-5xl text-dark uppercase tracking-wide relative z-10 mt-6">/Selected Work</h2>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center mb-10 gap-6">
+                <div class="flex flex-wrap justify-center gap-4 text-sm font-medium">
+                    <button class="bg-dark text-white rounded-full px-5 py-2 shadow-md">All</button>
+                    <button class="border border-gray-200 rounded-full px-5 py-2 text-gray-500 hover:text-dark hover:border-gray-300 transition">Machine Learning</button>
+                    <button class="border border-gray-200 rounded-full px-5 py-2 text-gray-500 hover:text-dark hover:border-gray-300 transition">Web & App</button>
+                </div>
+                <a href="https://github.com/Nav-0019" class="border border-gray-200 rounded-full px-5 py-2 text-sm font-medium hover:bg-gray-50 flex items-center gap-2 transition whitespace-nowrap">View All Work <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div onclick="window.location.href='pages/jal_drishti.html'" class="project-card group cursor-pointer block bg-white/60 backdrop-blur-md rounded-[2rem] p-3 border border-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+                    <div class="w-full bg-gray-100 rounded-[1.5rem] overflow-hidden mb-5 relative aspect-[4/3] shadow-inner">
+                        <img src="assets/jal_drishti_banner.jpg" class="project-img w-full h-full object-cover transition-transform duration-700 ease-out">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-xs font-semibold px-4 py-1.5 rounded-full text-dark shadow-sm">ML & Full-Stack</div>
+                        
+                        <div class="project-arrow absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-4 opacity-0 scale-75 transition-all duration-300 shadow-2xl z-10">
+                            <svg class="w-6 h-6 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2">
+                        <h3 class="text-2xl font-heading font-semibold text-dark mb-2">Jal Drishti</h3>
+                        <p class="text-gray-500 text-sm mb-4 line-clamp-2 leading-relaxed">State-wide Flash Flood Early Warning System. Fuses real-time satellite data (NASA, CWC), XGBoost ML, and hydrological physics into a blazing-fast dashboard with IoT and Twilio alerts.</p>
+                        <div class="flex gap-2">
+                            <span class="border border-gray-200 px-3 py-1 rounded-full text-xs text-gray-600 font-medium bg-gray-50/50 backdrop-blur">React</span>
+                            <span class="border border-gray-200 px-3 py-1 rounded-full text-xs text-gray-600 font-medium bg-gray-50/50 backdrop-blur">FastAPI</span>
+                            <span class="border border-gray-200 px-3 py-1 rounded-full text-xs text-gray-600 font-medium bg-gray-50/50 backdrop-blur">XGBoost</span>
+                            <a href="https://github.com/saswata12223/JAL-DRISHTI" target="_blank" onclick="event.stopPropagation()" class="ml-auto text-xs font-medium text-dark hover:underline flex items-center gap-1">Repo <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div onclick="window.location.href='pages/dayflow.html'" class="project-card group cursor-pointer block bg-white/60 backdrop-blur-md rounded-[2rem] p-3 border border-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+                    <div class="w-full bg-gray-100 rounded-[1.5rem] overflow-hidden mb-5 relative aspect-[4/3] shadow-inner">
+                        <img src="assets/dayflow_banner.jpg" class="project-img w-full h-full object-cover transition-transform duration-700 ease-out">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-xs font-semibold px-4 py-1.5 rounded-full text-dark shadow-sm">Web Dev</div>
+                        
+                        <div class="project-arrow absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-4 opacity-0 scale-75 transition-all duration-300 shadow-2xl z-10">
+                            <svg class="w-6 h-6 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2">
+                        <h3 class="text-2xl font-heading font-semibold text-dark mb-2 flex items-center gap-2">Dayflow AI HRMS</h3>
+                        <p class="text-gray-500 text-sm mb-4 line-clamp-2 leading-relaxed">A beautifully designed modern Human Resource Management System. Features a highly professional UI, comprehensive digital onboarding, live attendance tracking, and full leave workflows.</p>
+                        <div class="flex gap-2">
+                            <span class="border border-gray-200 px-3 py-1 rounded-full text-xs text-gray-600 font-medium bg-gray-50/50 backdrop-blur">Next.js 14</span>
+                            <span class="border border-gray-200 px-3 py-1 rounded-full text-xs text-gray-600 font-medium bg-gray-50/50 backdrop-blur">Prisma</span>
+                            <span class="border border-gray-200 px-3 py-1 rounded-full text-xs text-gray-600 font-medium bg-gray-50/50 backdrop-blur">Tailwind</span>
+                            <a href="https://github.com/Vimxs/Dayflow-AI-HRMS" target="_blank" onclick="event.stopPropagation()" class="ml-auto text-xs font-medium text-dark hover:underline flex items-center gap-1">Repo <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div onclick="window.location.href='pages/infrastructure.html'" class="project-card group cursor-pointer block bg-white/60 backdrop-blur-md rounded-[2rem] p-3 border border-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+                    <div class="w-full bg-gray-100 rounded-[1.5rem] overflow-hidden mb-5 relative aspect-[4/3] shadow-inner">
+                        <img src="assets/infra_dashboard_banner.jpg" class="project-img w-full h-full object-cover transition-transform duration-700 ease-out">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur text-xs font-semibold px-4 py-1.5 rounded-full text-dark shadow-sm">Data Analytics</div>
+                        
+                        <div class="project-arrow absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-4 opacity-0 scale-75 transition-all duration-300 shadow-2xl z-10">
+                            <svg class="w-6 h-6 text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2">
+                        <h3 class="text-2xl font-heading font-semibold text-dark mb-2 flex items-center gap-2">Infrastructure Intelligence</h3>
+                        <p class="text-gray-500 text-sm mb-4 line-clamp-2 leading-relaxed">End-to-end analytics solution for monitoring infrastructure complaints. Transforms raw relational data into an interactive Power BI dashboard with DAX calculations for actionable decision-making.</p>
+                        <div class="flex gap-2">
+                            <span class="border border-gray-200 px-3 py-1 rounded-full text-xs text-gray-600 font-medium bg-gray-50/50 backdrop-blur">Power BI</span>
+                            <span class="border border-gray-200 px-3 py-1 rounded-full text-xs text-gray-600 font-medium bg-gray-50/50 backdrop-blur">DAX</span>
+                            <span class="border border-gray-200 px-3 py-1 rounded-full text-xs text-gray-600 font-medium bg-gray-50/50 backdrop-blur">MySQL</span>
+                            <a href="https://github.com/vashundhara8/Infrastructure-Intelligence-System" target="_blank" onclick="event.stopPropagation()" class="ml-auto text-xs font-medium text-dark hover:underline flex items-center gap-1">Repo <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services/Skills Section -->
+        <section id="skills" class="py-24 px-6 md:px-12 border-t border-gray-100 bg-white">
+            <h2 class="font-heading font-medium text-4xl text-dark mb-16 uppercase tracking-wide">/Service & Skills</h2>
+            <div class="flex flex-col">
+                <div class="border-t border-gray-200 py-10 flex flex-col md:flex-row justify-between md:items-center group cursor-default hover:pl-6 transition-all duration-500">
+                    <div>
+                        <h3 class="text-3xl md:text-5xl font-heading font-semibold text-dark group-hover:text-gray-500 transition duration-300">DATA SCIENCE & ML</h3>
+                        <div class="flex flex-wrap gap-2 mt-4 opacity-60 group-hover:opacity-100 transition duration-300">
+                            <span class="px-3 py-1 border border-gray-200 rounded-full text-xs font-medium">Python</span>
+                            <span class="px-3 py-1 border border-gray-200 rounded-full text-xs font-medium">Data Analysis</span>
+                            <span class="px-3 py-1 border border-gray-200 rounded-full text-xs font-medium">Machine Learning</span>
+                        </div>
+                    </div>
+                    <svg class="w-10 h-10 text-gray-300 group-hover:text-dark group-hover:-rotate-45 transition duration-500 mt-6 md:mt-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </div>
+                <div class="border-t border-gray-200 py-10 flex flex-col md:flex-row justify-between md:items-center group cursor-default hover:pl-6 transition-all duration-500">
+                    <div>
+                        <h3 class="text-3xl md:text-5xl font-heading font-semibold text-dark group-hover:text-gray-500 transition duration-300">WEB DEV & APPS</h3>
+                        <div class="flex flex-wrap gap-2 mt-4 opacity-60 group-hover:opacity-100 transition duration-300">
+                            <span class="px-3 py-1 border border-gray-200 rounded-full text-xs font-medium">JavaScript</span>
+                            <span class="px-3 py-1 border border-gray-200 rounded-full text-xs font-medium">HTML/CSS</span>
+                            <span class="px-3 py-1 border border-gray-200 rounded-full text-xs font-medium">Flask</span>
+                            <span class="px-3 py-1 border border-gray-200 rounded-full text-xs font-medium">Kotlin</span>
+                        </div>
+                    </div>
+                    <svg class="w-10 h-10 text-gray-300 group-hover:text-dark group-hover:-rotate-45 transition duration-500 mt-6 md:mt-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </div>
+                <div class="border-t border-b border-gray-200 py-10 flex flex-col md:flex-row justify-between md:items-center group cursor-default hover:pl-6 transition-all duration-500">
+                    <div>
+                        <h3 class="text-3xl md:text-5xl font-heading font-semibold text-dark group-hover:text-gray-500 transition duration-300">TOOLS & DATABASES</h3>
+                        <div class="flex flex-wrap gap-2 mt-4 opacity-60 group-hover:opacity-100 transition duration-300">
+                            <span class="px-3 py-1 border border-gray-200 rounded-full text-xs font-medium">SQL</span>
+                            <span class="px-3 py-1 border border-gray-200 rounded-full text-xs font-medium">Git</span>
+                            <span class="px-3 py-1 border border-gray-200 rounded-full text-xs font-medium">Docker</span>
+                        </div>
+                    </div>
+                    <svg class="w-10 h-10 text-gray-300 group-hover:text-dark group-hover:-rotate-45 transition duration-500 mt-6 md:mt-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section (Dark Theme to break up layout) -->
+        <section id="achievements" class="bg-[#1C1D20] text-white py-24 px-8 md:px-16 rounded-[2rem] mx-4 mb-16 shadow-2xl overflow-hidden relative">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-teal-500/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
+            
+            <div class="flex flex-col md:flex-row justify-between mb-20 relative z-10">
+                <h2 class="font-heading font-medium text-4xl uppercase tracking-wide text-white">/EXPERIENCE</h2>
+                <p class="text-gray-400 mt-2 md:mt-0 font-medium">Continuous learning & building</p>
+            </div>
+            
+            <div class="flex flex-col relative z-10">
+                <!-- LeetCode -->
+                <div class="border-b border-gray-800 py-10 flex flex-col md:flex-row justify-between md:items-center group">
+                    <div class="flex gap-6 items-start">
+                        <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center shrink-0">
+                            <img src="assets/leetcodeLogo.png" class="w-6 h-6 grayscale group-hover:grayscale-0 transition duration-300">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-heading font-semibold mb-2 group-hover:text-teal-400 transition">LeetCode: Top 5%</h3>
+                            <p class="text-gray-400 text-sm max-w-md leading-relaxed">Dedicated problem solver with 150+ problems solved (215 Easy, 30 Medium). Consistently sharpening algorithmic thinking and data structures.</p>
+                        </div>
+                    </div>
+                    <a href="https://leetcode.com/u/navneetsingh94520/" class="mt-6 md:mt-0 px-6 py-2 border border-gray-700 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition self-start md:self-center">Profile</a>
+                </div>
+                
+                <!-- Minor Project 1 -->
+                <div class="border-b border-gray-800 py-10 flex flex-col md:flex-row justify-between md:items-center group">
+                    <div class="flex gap-6 items-start">
+                        <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center shrink-0">
+                            <svg class="w-6 h-6 text-gray-400 group-hover:text-teal-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-heading font-semibold mb-2 group-hover:text-teal-400 transition">Isekai Web Game</h3>
+                            <p class="text-gray-400 text-sm max-w-md leading-relaxed">An Isekai-themed RPG web app where players level up by matching monster attack numbers, progressing through ranks and weapons.</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 md:mt-0 flex gap-3 self-start md:self-center">
+                        <a href="https://Nav-0019.github.io/Isekai-Web-Game/" class="px-6 py-2 bg-white text-dark rounded-full text-sm font-medium hover:bg-gray-200 transition">Play</a>
+                        <a href="https://github.com/Nav-0019/Isekai-Web-Game" class="px-6 py-2 border border-gray-700 rounded-full text-sm font-medium hover:border-gray-500 transition">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Minor Project 2 -->
+                <div class="py-10 flex flex-col md:flex-row justify-between md:items-center group">
+                    <div class="flex gap-6 items-start">
+                        <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center shrink-0">
+                            <svg class="w-6 h-6 text-gray-400 group-hover:text-teal-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-heading font-semibold mb-2 group-hover:text-teal-400 transition">Isekai Bet App (Funny)</h3>
+                            <p class="text-gray-400 text-sm max-w-md leading-relaxed">Kotlin Android version of the RPG game with funny sound effects and expanded mechanics. Available as APK.</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 md:mt-0 flex gap-3 self-start md:self-center">
+                        <a href="https://drive.google.com/file/d/1XeseX0PSqIW9amNz4uKI1Pit6Q21Cve3/view?usp=sharing" class="px-6 py-2 bg-white text-dark rounded-full text-sm font-medium hover:bg-gray-200 transition">Download</a>
+                        <a href="https://github.com/Nav-0019/Isekai_Game_App/" class="px-6 py-2 border border-gray-700 rounded-full text-sm font-medium hover:border-gray-500 transition">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 px-6 md:px-12 text-center flex flex-col items-center border-t border-gray-100 bg-white">
+            <div class="inline-flex items-center gap-2 border border-gray-200 rounded-full px-4 py-2 text-sm font-medium mb-10 shadow-sm">
+                <span class="w-2.5 h-2.5 bg-green-500 rounded-full animate-pulse"></span>
+                Available for New Project
+            </div>
+            
+            <h2 class="font-heading font-black text-5xl md:text-7xl lg:text-8xl text-dark mb-8 tracking-tighter uppercase leading-none">HAVE A PROJECT<br>IN MIND?</h2>
+            
+            <p class="text-gray-500 max-w-xl mb-12 text-lg">Together, we can create something clear and impactful. Let's collaborate to bring our ideas to life in a way that resonates with everyone.</p>
+            
+            <a href="mailto:shubhamchauhan0019@gmail.com" class="bg-dark text-white rounded-full px-10 py-5 flex items-center gap-3 hover:bg-gray-800 transition text-lg font-medium shadow-2xl hover:shadow-xl hover:-translate-y-1 duration-300">
+                Contact Me 
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+
+            <!-- Bottom Social Pills -->
+            <div class="flex flex-wrap justify-center gap-4 mt-24">
+                <a href="#" class="border border-gray-200 bg-gray-50 rounded-full px-6 py-3 flex items-center gap-3 text-sm font-semibold text-dark shadow-sm">
+                    <img src="assets/profilePic.png" class="w-6 h-6 rounded-full object-cover border border-gray-200"> Shubham Singh Chauhan
+                </a>
+                <a href="https://github.com/Nav-0019" class="border border-gray-200 rounded-full px-6 py-3 flex items-center gap-3 hover:bg-gray-50 transition text-sm font-medium text-gray-700">
+                    <svg class="w-4 h-4 text-dark" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/shubham-ns/" class="border border-gray-200 rounded-full px-6 py-3 flex items-center gap-3 hover:bg-gray-50 transition text-sm font-medium text-gray-700">
+                    <svg class="w-4 h-4 text-dark" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="https://x.com/ShubhamSin0019" class="border border-gray-200 rounded-full px-6 py-3 flex items-center gap-3 hover:bg-gray-50 transition text-sm font-medium text-gray-700">
+                    <svg class="w-4 h-4 text-dark" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.502 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                </a>
+            </div>
+            
+            <!-- Footer Text -->
+            <div class="mt-16 text-xs text-gray-400">
+                © 2026 Shubham Singh Chauhan. Designed & Built by Me.
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Floating WhatsApp Contact Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/917310347742" target="_blank" class="relative flex items-center justify-center w-14 h-14 bg-[#9CA3AF] rounded-full shadow-2xl hover:bg-gray-500 transition-colors duration-300 border-2 border-white animate-juggle hover:animate-none">
+            <svg class="w-8 h-8 text-white relative z-10" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12.01 2.014c-5.467 0-9.914 4.453-9.914 9.92 0 1.751.458 3.456 1.328 4.953l-1.408 5.143 5.263-1.383c1.453.784 3.082 1.198 4.73 1.198h.004c5.464 0 9.913-4.453 9.913-9.916 0-2.65-1.03-5.141-2.905-7.013a9.866 9.866 0 00-7.011-2.902zm0 1.666c2.203 0 4.275.859 5.834 2.422a8.212 8.212 0 012.413 5.83c0 4.544-3.693 8.243-8.24 8.243h-.002c-1.439 0-2.85-.386-4.086-1.118l-.293-.174-3.036.797.808-2.96-.192-.306c-.803-1.275-1.226-2.753-1.226-4.282 0-4.547 3.696-8.244 8.243-8.244zm4.536 6.177c-.248-.124-1.472-.727-1.7-.811-.228-.084-.396-.124-.56.124-.165.248-.642.811-.787.977-.143.165-.289.186-.537.062-.248-.124-1.05-.387-2.001-1.233-.74-.658-1.24-1.472-1.383-1.72-.144-.248-.016-.381.109-.505.111-.111.248-.289.37-.433.124-.143.165-.248.248-.413.084-.165.042-.31-.02-.433-.062-.124-.56-1.352-.767-1.85-.202-.483-.408-.417-.56-.425l-.478-.008c-.165 0-.433.062-.659.31-.227.248-.865.845-.865 2.062 0 1.217.886 2.393 1.01 2.557.124.165 1.745 2.662 4.225 3.731.59.255 1.05.407 1.409.522.593.189 1.134.162 1.558.098.473-.072 1.472-.601 1.678-1.182.206-.58.206-1.079.144-1.182-.062-.103-.228-.165-.476-.289z"/>
+            </svg>
+        </a>
+    </div>
+
 </body>
 </html>

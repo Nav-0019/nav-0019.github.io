@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayflow AI HRMS | Shubham Portfolio</title>
+    <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#111111',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #E5E7EB; 
+            background-image: url('../assets/cloud_bg.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 1rem;
+        }
+        @media (min-width: 768px) { body { padding: 2rem; } }
+        .main-container {
+            background-color: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            border-radius: 2rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            min-height: calc(100vh - 4rem);
+        }
+    </style>
+</head>
+<body class="text-dark antialiased">
+    
+    <div class="main-container flex flex-col">
+        <!-- Top Nav -->
+        <nav class="flex justify-between items-center p-6 md:p-8 z-50">
+            <a href="../index.html#work" class="flex items-center gap-2 border border-gray-200 rounded-full px-5 py-2.5 text-sm font-medium hover:bg-gray-50 transition">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back
+            </a>
+            
+            <div class="flex items-center gap-2 border border-gray-200 rounded-full px-4 py-2.5 text-sm font-medium bg-white">
+                <span class="w-2.5 h-2.5 bg-green-500 rounded-full animate-pulse"></span>
+                Available for New Project
+            </div>
+        </nav>
+
+        <!-- Header Section & Metadata -->
+        <header class="px-6 md:px-16 pt-12 pb-12 flex flex-col md:flex-row justify-between items-start gap-12 border-b border-gray-100">
+            <div class="flex-1">
+                <h1 class="font-heading font-black text-4xl md:text-5xl lg:text-6xl text-dark mb-6 tracking-tight leading-[1.1]">
+                    Dayflow: Modern Human Resource Management System
+                </h1>
+                <p class="text-gray-500 text-lg md:text-xl max-w-3xl leading-relaxed mb-6 font-medium">
+                    "Every workday, perfectly aligned." Streamlining core HR operations: digital onboarding, profile management, live attendance, and payroll visibility.
+                </p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold font-heading">S</div>
+                    <div>
+                        <p class="text-sm font-bold text-dark">Shubham Singh Chauhan</p>
+                        <p class="text-xs text-gray-400">2023 - Present</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Metadata & Quick Facts Panel -->
+            <div class="bg-gray-50 p-6 rounded-3xl border border-gray-200 min-w-[320px] shadow-sm relative overflow-hidden">
+                <div class="absolute -right-4 -top-4 w-16 h-16 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+                <h4 class="font-bold text-dark mb-5 uppercase tracking-widest text-xs border-b border-gray-200 pb-3">Quick Facts</h4>
+                <ul class="space-y-4 text-sm font-medium">
+                    <li class="flex justify-between items-center"><span class="text-gray-500">Theme</span> <strong class="text-dark text-right">Enterprise Management</strong></li>
+                    <li class="flex justify-between items-center"><span class="text-gray-500">Category</span> <strong class="text-dark text-right">Full-Stack Web App</strong></li>
+                    <li class="pt-4 border-t border-gray-200">
+                        <span class="text-gray-500 block mb-2">Required Tech Stack</span>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-white border border-gray-200 text-xs rounded-md shadow-sm">Next.js 14</span>
+                            <span class="px-2 py-1 bg-white border border-gray-200 text-xs rounded-md shadow-sm">TypeScript</span>
+                            <span class="px-2 py-1 bg-white border border-gray-200 text-xs rounded-md shadow-sm">Prisma ORM</span>
+                            <span class="px-2 py-1 bg-white border border-gray-200 text-xs rounded-md shadow-sm">PostgreSQL</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Hero Image -->
+        <div class="p-6 md:p-12 border-b border-gray-100">
+            <div class="w-full rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 bg-gray-50 aspect-video md:aspect-[21/9] relative group">
+                <img src="../assets/dayflow_banner.jpg" alt="Dayflow Dashboard" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+            </div>
+        </div>
+
+        <!-- Article Content -->
+        <article class="py-12 px-6 md:px-16 max-w-5xl mx-auto space-y-20">
+            
+            <!-- 1. Introduction & Background -->
+            <section>
+                <h2 class="text-3xl font-heading font-bold text-dark mb-6 flex items-center gap-4">
+                    <span class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center text-lg">1</span> 
+                    Introduction & Background
+                </h2>
+                <div class="prose prose-lg text-gray-600 max-w-none">
+                    <p><strong class="text-dark">The Real-World Context:</strong> Agile organizations rapidly outgrow disconnected spreadsheets and fragmented tools for managing their workforce.</p>
+                    <p><strong class="text-dark">The Existing Gap:</strong> Traditional HR systems are often bulky, unintuitive, and slow. They create friction rather than flow during crucial touchpoints like onboarding and leave requests.</p>
+                    <p><strong class="text-dark">The Core Objective:</strong> Build a high-performance, aesthetically pleasing HRMS that unifies profile management, live attendance, leave workflows, and payroll visibility into a single, cohesive experience.</p>
+                </div>
+            </section>
+
+            <!-- 2. Deep Dive into the Requirements -->
+            <section>
+                <h2 class="text-3xl font-heading font-bold text-dark mb-6 flex items-center gap-4">
+                    <span class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center text-lg">2</span> 
+                    Deep Dive into the Requirements
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-xl font-bold text-dark mb-4">Key Challenges to Solve</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start gap-2"><span class="text-blue-500 mt-1">•</span> <strong>Role-Based Access:</strong> Ensuring strict separation of concerns between Admin/HR and standard Employee views.</li>
+                            <li class="flex items-start gap-2"><span class="text-blue-500 mt-1">•</span> <strong>Data Integrity:</strong> Validating all mutating endpoints rigorously to prevent malformed HR records.</li>
+                            <li class="flex items-start gap-2"><span class="text-blue-500 mt-1">•</span> <strong>Visual Clarity:</strong> Providing immediate visual cues for attendance statuses (Present, Absent, Warning).</li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50/50 p-8 rounded-3xl border border-blue-100">
+                        <h3 class="text-xl font-bold text-dark mb-4">Target Users</h3>
+                        <p class="text-gray-600 mb-2"><strong class="text-dark">HR Leads & Admins:</strong> Managing the overarching structure, approving leaves, and monitoring organizational health.</p>
+                        <p class="text-gray-600"><strong class="text-dark">Employees:</strong> Tracking their own attendance, submitting leave requests, and managing their professional profiles seamlessly.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Proposed Solution Architecture -->
+            <section>
+                <h2 class="text-3xl font-heading font-bold text-dark mb-6 flex items-center gap-4">
+                    <span class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center text-lg">3</span> 
+                    Proposed Solution Architecture
+                </h2>
+                
+                <p class="text-gray-600 text-lg mb-8">
+                    <strong class="text-dark">High-Level Concept:</strong> A modern, server-rendered React application utilizing a robust ORM to ensure type-safe data transactions from the database up to the client UI.
+                </p>
+
+                <!-- System Workflow Diagram (Text-based visual) -->
+                <div class="bg-gray-50 border border-gray-200 rounded-3xl p-8 mb-10 overflow-x-auto shadow-inner">
+                    <div class="flex items-center justify-between min-w-[700px] gap-4">
+                        <div class="text-center">
+                            <div class="w-32 h-16 bg-white border border-gray-300 rounded-xl flex items-center justify-center font-bold text-sm text-dark shadow-sm">Next.js Client</div>
+                            <p class="text-xs text-gray-500 mt-2">App Router UI</p>
+                        </div>
+                        <div class="flex-1 h-0.5 bg-gray-300 relative"><div class="absolute right-0 -top-1.5 w-3 h-3 border-t-2 border-r-2 border-gray-400 rotate-45"></div></div>
+                        <div class="text-center">
+                            <div class="w-32 h-16 bg-white border border-blue-300 rounded-xl flex items-center justify-center font-bold text-sm text-blue-700 shadow-sm">API Layer</div>
+                            <p class="text-xs text-gray-500 mt-2">JWT & Zod Validated</p>
+                        </div>
+                        <div class="flex-1 h-0.5 bg-gray-300 relative"><div class="absolute right-0 -top-1.5 w-3 h-3 border-t-2 border-r-2 border-gray-400 rotate-45"></div></div>
+                        <div class="text-center">
+                            <div class="w-32 h-16 bg-white border border-gray-300 rounded-xl flex items-center justify-center font-bold text-sm text-dark shadow-sm">Database</div>
+                            <p class="text-xs text-gray-500 mt-2">PostgreSQL + Prisma</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-bold text-dark mb-6">Technology Stack Breakdown</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="border border-gray-100 p-6 rounded-2xl bg-white shadow-sm">
+                        <h4 class="font-bold text-dark mb-2 border-b border-gray-100 pb-2">Frontend Framework</h4>
+                        <p class="text-sm text-gray-600">Next.js 14+ (App Router), TypeScript, Tailwind CSS, Lucide React, and Recharts.</p>
+                    </div>
+                    <div class="border border-gray-100 p-6 rounded-2xl bg-white shadow-sm">
+                        <h4 class="font-bold text-dark mb-2 border-b border-gray-100 pb-2">Backend & Database</h4>
+                        <p class="text-sm text-gray-600">PostgreSQL 16, Prisma ORM, providing type-safe database migrations and queries.</p>
+                    </div>
+                    <div class="border border-gray-100 p-6 rounded-2xl bg-white shadow-sm">
+                        <h4 class="font-bold text-dark mb-2 border-b border-gray-100 pb-2">Authentication</h4>
+                        <p class="text-sm text-gray-600">JWT (Access + httpOnly Refresh) with bcryptjs hashing and custom RBAC Middleware.</p>
+                    </div>
+                    <div class="border border-gray-100 p-6 rounded-2xl bg-white shadow-sm">
+                        <h4 class="font-bold text-dark mb-2 border-b border-gray-100 pb-2">Data Integrity</h4>
+                        <p class="text-sm text-gray-600">Zod schemas heavily utilized for strict payload validation on all mutating API routes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Feasibility, Dependencies, and Showstoppers -->
+            <section>
+                <h2 class="text-3xl font-heading font-bold text-dark mb-6 flex items-center gap-4">
+                    <span class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center text-lg">4</span> 
+                    Design & Security Focus
+                </h2>
+                
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-dark mb-2">Innovation (USP): Modern Painted Theme</h3>
+                        <p class="text-gray-600">Dayflow emphasizes an elevated UX with a "Modern Painted Theme"—featuring a soft multi-stop radial gradient canvas and crisp glassmorphism cards. Color psychology plays a major role: Teal for Present, Amber for Warning, and Danger Red for Absent.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 border border-gray-200 p-6 rounded-2xl">
+                        <h3 class="text-xl font-bold text-dark mb-2">Security Architecture</h3>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            Rather than relying on basic sessions, Dayflow employs robust JWT strategies with HTTP-only refresh tokens, completely mitigating XSS vector attacks on auth state.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Impact & Conclusion -->
+            <section>
+                <h2 class="text-3xl font-heading font-bold text-dark mb-6 flex items-center gap-4">
+                    <span class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center text-lg">5</span> 
+                    Impact & Conclusion
+                </h2>
+                
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    <strong class="text-dark">Closing Summary:</strong> By treating HR operations not just as data entry, but as a core facet of employee experience, Dayflow aligns everyday work perfectly. The system's combination of a beautiful, responsive UI with a bulletproof Next.js and Prisma backend delivers a scalable solution tailored for modern enterprises.
+                </p>
+            </section>
+        </article>
+
+        <!-- Footer Section -->
+        <footer class="bg-dark text-white pt-16 pb-8 px-6 md:px-16 mt-10 rounded-t-[3rem]">
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-heading font-bold mb-4">Review the Code</h3>
+                    <div class="flex flex-wrap gap-2 justify-center md:justify-start mb-6">
+                        <span class="text-xs bg-gray-800 text-gray-300 px-3 py-1.5 rounded-full font-mono">#NextJS</span>
+                        <span class="text-xs bg-gray-800 text-gray-300 px-3 py-1.5 rounded-full font-mono">#TypeScript</span>
+                        <span class="text-xs bg-gray-800 text-gray-300 px-3 py-1.5 rounded-full font-mono">#Prisma</span>
+                        <span class="text-xs bg-gray-800 text-gray-300 px-3 py-1.5 rounded-full font-mono">#TailwindCSS</span>
+                    </div>
+                    <p class="text-sm text-gray-400">Written by DreamSmith, Member: Shubham Singh Chauhan.</p>
+                </div>
+                
+                <a href="https://github.com/Vimxs/Dayflow-AI-HRMS" target="_blank" class="bg-white text-dark rounded-full px-8 py-4 font-bold hover:bg-gray-200 transition shadow-xl hover:-translate-y-1 duration-300 whitespace-nowrap flex items-center gap-3">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    View Project on GitHub
+                </a>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-xs text-gray-500">
+                © 2026 Shubham Singh Chauhan. Designed & Built by Me.
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
